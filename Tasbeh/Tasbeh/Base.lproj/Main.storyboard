@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tasbeh" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pqe-hV-302">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تــسبــيــح" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xr-Ph-pku">
+                                        <rect key="frame" x="68" y="38" width="64.5" height="64"/>
+                                        <fontDescription key="fontDescription" name="DiwanMishafi" family="Mishafi" pointSize="44"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ee-tD-ZP7">
+                                        <rect key="frame" x="93" y="98" width="14" height="64"/>
+                                        <fontDescription key="fontDescription" name="DiwanMishafi" family="Mishafi" pointSize="44"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.21463177298376696" green="0.47656598949875589" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="J1Z-gQ-Ii9"/>
+                                    <constraint firstItem="0Ee-tD-ZP7" firstAttribute="centerY" secondItem="pqe-hV-302" secondAttribute="centerY" constant="30" id="NBT-DU-3MM"/>
+                                    <constraint firstItem="0Ee-tD-ZP7" firstAttribute="centerX" secondItem="pqe-hV-302" secondAttribute="centerX" id="arM-wS-cM8"/>
+                                    <constraint firstAttribute="height" constant="200" id="pnt-za-7HO"/>
+                                    <constraint firstItem="6xr-Ph-pku" firstAttribute="centerY" secondItem="pqe-hV-302" secondAttribute="centerY" constant="-30" id="tWn-DL-M6L"/>
+                                    <constraint firstItem="6xr-Ph-pku" firstAttribute="centerX" secondItem="pqe-hV-302" secondAttribute="centerX" id="yMR-Rh-cCn"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="111" translatesAutoresizingMaskIntoConstraints="NO" id="8FA-79-sLx">
+                                <rect key="frame" x="50" y="575" width="314" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IE5-Jv-8DD">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <color key="backgroundColor" red="0.214631773" green="0.47656598950000001" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="6p0-AH-Iit"/>
+                                            <constraint firstAttribute="width" constant="100" id="XmA-DS-hi2"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="-"/>
+                                        <connections>
+                                            <action selector="minusAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uNJ-7V-p4X"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9D3-Om-cp3">
+                                        <rect key="frame" x="214" y="0.0" width="100" height="100"/>
+                                        <color key="backgroundColor" red="0.214631773" green="0.47656598950000001" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="CYq-KX-tsx"/>
+                                            <constraint firstAttribute="height" constant="100" id="YNh-ij-Cuz"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="+"/>
+                                        <connections>
+                                            <action selector="addAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vyx-dv-30Y"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.33069592710000001" green="0.71695917840000001" blue="0.74902826550000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="pqe-hV-302" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5ZC-eM-3Vh"/>
+                            <constraint firstItem="8FA-79-sLx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Jyk-uD-9g2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8FA-79-sLx" secondAttribute="trailing" constant="50" id="PlT-ts-bwl"/>
+                            <constraint firstItem="8FA-79-sLx" firstAttribute="top" secondItem="pqe-hV-302" secondAttribute="bottom" constant="27" id="jNf-eM-jEt"/>
+                            <constraint firstItem="pqe-hV-302" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zek-In-95v"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainView" destination="pqe-hV-302" id="kAc-l6-yTI"/>
+                        <outlet property="minusButon" destination="IE5-Jv-8DD" id="UY2-Ah-DhW"/>
+                        <outlet property="plusButton" destination="9D3-Om-cp3" id="KYD-cX-djG"/>
+                        <outlet property="tasbehaCounter" destination="0Ee-tD-ZP7" id="2nZ-Jy-9vu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="134.59821428571428"/>
+        </scene>
+    </scenes>
+</document>
