@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UserDefaults" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" اقتباس اليوم " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pxo-wg-F94">
+                                <rect key="frame" x="155" y="91" width="104" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="أزهِر من جديد ، أثبت لهم أن الذبول خُرافة - شمس التربيزي." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Dd-BL-uso">
+                                <rect key="frame" x="0.0" y="156" width="414" height="558"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="fRq-7D-y1M"/>
+                                    <constraint firstAttribute="height" constant="558" id="sAw-bW-oGW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gsd-sn-uoF">
+                                <rect key="frame" x="351" y="734" width="44" height="31"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="minus.circle" catalog="system"/>
+                                <connections>
+                                    <action selector="smallFontt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Ce-E9-jod"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g69-zG-cBX">
+                                <rect key="frame" x="270" y="734" width="44" height="31"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus.circle" catalog="system"/>
+                                <connections>
+                                    <action selector="bigFontt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qhA-22-Pk0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الخط" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYh-5y-VkU">
+                                <rect key="frame" x="316" y="739" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="القراءة الليلية" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fP-0j-LWt">
+                                <rect key="frame" x="301" y="782" width="86" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F80-lG-05O">
+                                <rect key="frame" x="234" y="777" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="Jux-kR-XJv"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hYh-5y-VkU" firstAttribute="leading" secondItem="g69-zG-cBX" secondAttribute="trailing" constant="2" id="52I-Et-LRc"/>
+                            <constraint firstItem="3Dd-BL-uso" firstAttribute="top" secondItem="Pxo-wg-F94" secondAttribute="bottom" constant="41" id="8mb-DK-i66"/>
+                            <constraint firstItem="g69-zG-cBX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="270" id="JsD-gl-4YR"/>
+                            <constraint firstItem="hYh-5y-VkU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="695" id="Jt0-Eh-lH6"/>
+                            <constraint firstItem="9fP-0j-LWt" firstAttribute="top" secondItem="hYh-5y-VkU" secondAttribute="bottom" constant="22" id="KWS-nO-Gt3"/>
+                            <constraint firstItem="F80-lG-05O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="234" id="Kf0-3M-Q56"/>
+                            <constraint firstItem="3Dd-BL-uso" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OTe-bA-Bui"/>
+                            <constraint firstItem="Pxo-wg-F94" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="155" id="WPj-Qx-qKT"/>
+                            <constraint firstItem="F80-lG-05O" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="733" id="ZI6-kG-b9w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gsd-sn-uoF" secondAttribute="trailing" constant="19" id="bA0-V6-NeH"/>
+                            <constraint firstItem="9fP-0j-LWt" firstAttribute="leading" secondItem="F80-lG-05O" secondAttribute="trailing" constant="18" id="heZ-3W-tIC"/>
+                            <constraint firstItem="g69-zG-cBX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="690" id="puW-9f-vUW"/>
+                            <constraint firstItem="Pxo-wg-F94" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="47" id="qv8-bB-tjd"/>
+                            <constraint firstItem="Gsd-sn-uoF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="690" id="yeh-Ku-aks"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="darkModeSwitch" destination="F80-lG-05O" id="oDc-bD-21u"/>
+                        <outlet property="labelText" destination="3Dd-BL-uso" id="504-Dh-97H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="minus.circle" catalog="system" width="128" height="121"/>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
+        <namedColor name="BackgroundColor">
+            <color red="0.91600000858306885" green="0.99299997091293335" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
