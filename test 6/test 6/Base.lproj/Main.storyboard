@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="test_6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zc7-KA-Uko">
+                                <rect key="frame" x="147" y="432.5" width="120" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="CFf-Yk-Tvf"/>
+                                    <constraint firstAttribute="height" constant="31" id="pCz-D9-Gsq"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Dark Mode"/>
+                                <connections>
+                                    <action selector="darkButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UBw-Wm-gpk"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f5D-3O-itY">
+                                <rect key="frame" x="183" y="512" width="49" height="31"/>
+                                <connections>
+                                    <action selector="switchStyle:" destination="BYZ-38-t0r" eventType="valueChanged" id="EuG-1f-M8I"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="f5D-3O-itY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="183" id="6pK-nm-w4s"/>
+                            <constraint firstItem="f5D-3O-itY" firstAttribute="top" secondItem="zc7-KA-Uko" secondAttribute="bottom" constant="48.5" id="7jM-FL-Guy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f5D-3O-itY" secondAttribute="trailing" constant="184" id="FU0-cK-Ouq"/>
+                            <constraint firstItem="zc7-KA-Uko" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P3x-cK-DSf"/>
+                            <constraint firstItem="zc7-KA-Uko" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gAb-2d-e4p"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="switchMode" destination="f5D-3O-itY" id="evD-je-JMS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="121"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
