@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="userDefaults" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OFF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9T-Du-5Jh">
+                                <rect key="frame" x="29" y="811" width="32" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kHv-vJ-Zgi">
+                                <rect key="frame" x="156.5" y="108" width="101" height="32"/>
+                                <segments>
+                                    <segment title="Light"/>
+                                    <segment title="Dark"/>
+                                </segments>
+                                <connections>
+                                    <action selector="themeAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="jo3-jh-u3B"/>
+                                </connections>
+                            </segmentedControl>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BBj-Oo-o8k">
+                                <rect key="frame" x="91" y="806" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="ZEG-eu-x2P"/>
+                                </connections>
+                            </switch>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="&quot; What’s Meant For You Will Always Find Its Way To You &quot;" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Evm-I2-kzM">
+                                <rect key="frame" x="87" y="303" width="240" height="106"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="L" translatesAutoresizingMaskIntoConstraints="NO" id="1zX-zy-9Ld">
+                                <rect key="frame" x="216" y="521" width="150" height="199"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="199" id="xX2-YT-Kfq"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Evm-I2-kzM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="1E4-OQ-NHm"/>
+                            <constraint firstItem="E9T-Du-5Jh" firstAttribute="centerY" secondItem="BBj-Oo-o8k" secondAttribute="centerY" id="2jf-Xd-gFq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1zX-zy-9Ld" secondAttribute="trailing" constant="48" id="BaL-8z-d2r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1zX-zy-9Ld" secondAttribute="bottom" constant="142" id="EqY-Ua-CkS"/>
+                            <constraint firstItem="Evm-I2-kzM" firstAttribute="top" secondItem="kHv-vJ-Zgi" secondAttribute="bottom" constant="164" id="JhM-KN-ioz"/>
+                            <constraint firstItem="Evm-I2-kzM" firstAttribute="top" secondItem="kHv-vJ-Zgi" secondAttribute="bottom" constant="164" id="LDZ-3t-6gF"/>
+                            <constraint firstItem="1zX-zy-9Ld" firstAttribute="top" secondItem="Evm-I2-kzM" secondAttribute="bottom" constant="112" id="Uoj-IX-1vB"/>
+                            <constraint firstItem="E9T-Du-5Jh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="767" id="VK9-DP-W6e"/>
+                            <constraint firstItem="kHv-vJ-Zgi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="c5m-oA-Nrv"/>
+                            <constraint firstItem="BBj-Oo-o8k" firstAttribute="leading" secondItem="E9T-Du-5Jh" secondAttribute="trailing" constant="30" id="dSL-TZ-NZh"/>
+                            <constraint firstItem="E9T-Du-5Jh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="e8J-Tv-PIz"/>
+                            <constraint firstItem="1zX-zy-9Ld" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="216" id="eC3-9H-cRj"/>
+                            <constraint firstItem="Evm-I2-kzM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kJa-XB-Vwl"/>
+                            <constraint firstItem="kHv-vJ-Zgi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n5r-cK-Xcr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="onOfLable" destination="E9T-Du-5Jh" id="mQY-JP-1L5"/>
+                        <outlet property="onOffSwitch" destination="BBj-Oo-o8k" id="Qta-Ip-3iC"/>
+                        <outlet property="textArea" destination="Evm-I2-kzM" id="Wc9-IY-eaI"/>
+                        <outlet property="theme" destination="kHv-vJ-Zgi" id="ztt-gE-ULF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="L" width="600" height="900"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
