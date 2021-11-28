@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="userDefaultProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space" translatesAutoresizingMaskIntoConstraints="NO" id="K1O-EF-coi">
+                                <rect key="frame" x="0.0" y="69" width="414" height="768"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D2j-Ra-JUy">
+                                <rect key="frame" x="283.5" y="681" width="95.5" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OFF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAS-gG-Fqu">
+                                        <rect key="frame" x="0.0" y="0.0" width="46.5" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Y1n-YW-Fdv">
+                                        <rect key="frame" x="46.5" y="0.0" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="onoffSwitchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="egh-La-oUP"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kik-26-j91">
+                                <rect key="frame" x="106" y="742" width="224" height="32"/>
+                                <segments>
+                                    <segment title="light"/>
+                                    <segment title="dark"/>
+                                    <segment title="blue"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segment:" destination="BYZ-38-t0r" eventType="valueChanged" id="2Ev-QF-qgO"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="space" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIM-38-cuA">
+                                <rect key="frame" x="130" y="124" width="154" height="71"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                <color key="textColor" red="0.090021945536136627" green="0.67331081628799438" blue="0.64756572246551514" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21P-kX-4nM">
+                                <rect key="frame" x="301" y="580" width="45" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemBlueColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system" title="">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="bold"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="plusAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gm5-UP-Iq3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NrV-nP-NoQ">
+                                <rect key="frame" x="56" y="580" width="45" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="minus" catalog="system" title="">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="bold"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="minusAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oEH-BB-QqY"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="DxV-Jz-UEi">
+                                <rect key="frame" x="24" y="248.5" width="366" height="281.5"/>
+                                <string key="text">The Hubble Space Telescope has captured a stunning view of the Prawn Nebula floating through deep space. 
+
+The Prawn Nebula, formally known as IC 4628, is an emission nebula located 6,000 light-years from Earth, in the constellation Scorpius. Nebulas, or clouds of interstellar gas and dust, form following massive stellar explosions; in turn, this interstellar material gives life to new stars. However, the human eye can't detect this type of light, making IC 4628 incredibly faint to viewers on Earth. Given Hubble's vantage point in space and its range of cameras, the telescope is able to get an up-close view of the nebula's structure, including bright areas of glowing gas and dazzling star formation.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="K1O-EF-coi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1a1-3g-dek"/>
+                            <constraint firstItem="K1O-EF-coi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="1ud-6V-GAd"/>
+                            <constraint firstItem="D2j-Ra-JUy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="283.5" id="3yS-iy-gdc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DxV-Jz-UEi" secondAttribute="trailing" constant="24" id="59S-QQ-rs1"/>
+                            <constraint firstItem="K1O-EF-coi" firstAttribute="top" secondItem="DxV-Jz-UEi" secondAttribute="bottom" constant="-461" id="93M-FP-Dgf"/>
+                            <constraint firstItem="PIM-38-cuA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="AuZ-Q1-RGI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="K1O-EF-coi" secondAttribute="bottom" constant="25" id="L2D-Hm-R9k"/>
+                            <constraint firstItem="PIM-38-cuA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="PZu-nC-rkz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kik-26-j91" secondAttribute="trailing" constant="84" id="T3D-tB-aQN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kik-26-j91" secondAttribute="bottom" constant="89" id="UD1-lq-vKq"/>
+                            <constraint firstItem="kik-26-j91" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="106" id="YGj-LW-hha"/>
+                            <constraint firstItem="DxV-Jz-UEi" firstAttribute="top" secondItem="PIM-38-cuA" secondAttribute="bottom" constant="53.5" id="fFV-24-Qf1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PIM-38-cuA" secondAttribute="trailing" constant="130" id="hzw-0w-OuK"/>
+                            <constraint firstItem="kik-26-j91" firstAttribute="top" secondItem="D2j-Ra-JUy" secondAttribute="bottom" constant="30" id="kCU-uz-ez1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D2j-Ra-JUy" secondAttribute="trailing" constant="35" id="mgF-T7-AjA"/>
+                            <constraint firstItem="DxV-Jz-UEi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="nV4-iC-6EH"/>
+                            <constraint firstItem="tAS-gG-Fqu" firstAttribute="width" secondItem="K1O-EF-coi" secondAttribute="width" multiplier="0.076087" constant="15" id="pBB-kI-iuN"/>
+                            <constraint firstItem="K1O-EF-coi" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vsk-Ok-jhL"/>
+                            <constraint firstItem="PIM-38-cuA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z4z-Id-cZo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="onoffLable" destination="tAS-gG-Fqu" id="Hld-QN-per"/>
+                        <outlet property="onoffswitch" destination="Y1n-YW-Fdv" id="E03-MY-mil"/>
+                        <outlet property="segmentOutlet" destination="kik-26-j91" id="SGy-fg-deg"/>
+                        <outlet property="textArea" destination="DxV-Jz-UEi" id="HKk-P7-PrS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="minus" catalog="system" width="128" height="24"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="space" width="800" height="800"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
