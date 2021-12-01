@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     
     let defaults = UserDefaults.standard
     var fontSize: Int!
-    
+    // IBOutlets
     @IBOutlet weak var switchOutlet: UISwitch!
     @IBOutlet weak var quoteslabel: UILabel!
     override func viewDidLoad() {
@@ -23,19 +23,24 @@ class ViewController: UIViewController {
             fontSize = 20
             defaults.set(fontSize, forKey: "fontSize")
         }
+        
         if defaults.bool(forKey: "state") == true {
             switchState(bool: true)
         } else {
             switchState(bool: false)
         }
+        
     }
     
+    // Functions
     func updateSize(size: Int) {
        fontSize = size
         quoteslabel.font = quoteslabel.font.withSize(CGFloat(fontSize))
         defaults.set(fontSize, forKey: "fontSize")
     }
+    
     func switchState(bool: Bool) {
+        
         if bool {
             defaults.set(true, forKey: "state")
             overrideUserInterfaceStyle = .dark
@@ -47,14 +52,19 @@ class ViewController: UIViewController {
         }
         
     }
+    
+    // IBActions
     @IBAction func bigSize(_ sender: Any) {
         updateSize(size: defaults.integer(forKey: "fontSize") + 3)
     }
+    
     @IBAction func smallSize(_ sender: Any) {
         updateSize(size: defaults.integer(forKey: "fontSize") - 3)
     }
+    
     @IBAction func switchAction(_ sender: UISwitch) {
         switchState(bool: sender.isOn)
     }
+    
 }
 
