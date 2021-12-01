@@ -42,17 +42,6 @@ class ViewController: UIViewController {
     
     
     @IBAction func reloadAction(_ sender: Any) {
-        
-        textView.text = arrQuotes.first
-        
-        linkedList()
-        
-        UserDefaults.standard.set(textView.text,forKey: "quotes")
-        
-    }
-    
-    @IBAction func action(_ sender: Any) {
-        
         flag.toggle()
         UserDefaults.standard.set(flag,forKey: "colorStyle")
         if flag {
@@ -60,7 +49,18 @@ class ViewController: UIViewController {
         } else {
             overrideUserInterfaceStyle = .light
         }
+ 
         
+//        UserDefaults.standard.set(textView.text,forKey: "quotes")
+        
+    }
+    
+    @IBAction func action(_ sender: Any) {
+        
+
+        textView.text = arrQuotes.first
+        
+        linkedList()
         
         //1. clicked
         //2. toggle (Value)

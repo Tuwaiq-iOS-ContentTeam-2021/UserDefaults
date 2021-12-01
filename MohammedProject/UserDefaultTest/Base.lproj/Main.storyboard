@@ -42,7 +42,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tKr-lN-guC"/>
+                                            <action selector="reloadAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fZj-02-rbe"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kr6-R0-0Ll">
@@ -53,8 +53,7 @@
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7ZA-a4-bpM"/>
-                                            <action selector="reloadAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oWK-O2-V20"/>
+                                            <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="teK-Os-MDh"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -80,8 +79,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="changeThemeOutlet" destination="WwR-Xg-3vw" id="E3D-up-V0h"/>
-                        <outlet property="reloadOutlet" destination="Kr6-R0-0Ll" id="9Et-T2-kfq"/>
+                        <outlet property="changeThemeOutlet" destination="WwR-Xg-3vw" id="Rzj-Ni-8rs"/>
+                        <outlet property="reloadOutlet" destination="Kr6-R0-0Ll" id="kh3-bk-qCs"/>
                         <outlet property="textView" destination="8Pd-XK-gb9" id="SBM-7g-W1e"/>
                     </connections>
                 </viewController>
