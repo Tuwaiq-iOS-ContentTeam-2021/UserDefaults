@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UserDefaultTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8Pd-XK-gb9">
+                                <rect key="frame" x="20" y="313.5" width="374" height="269"/>
+                                <color key="backgroundColor" name="my mood"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="my quotes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bn2-mG-FFP">
+                                <rect key="frame" x="20" y="94" width="374" height="39"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dKA-o9-iRD">
+                                <rect key="frame" x="20" y="682" width="374" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WwR-Xg-3vw">
+                                        <rect key="frame" x="0.0" y="0.0" width="182" height="80"/>
+                                        <color key="backgroundColor" red="0.049535917667916186" green="0.16475099042047459" blue="0.18660893391088107" alpha="0.17649322302163054" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Change theme">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="reloadAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fZj-02-rbe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kr6-R0-0Ll">
+                                        <rect key="frame" x="192" y="0.0" width="182" height="80"/>
+                                        <color key="backgroundColor" red="0.049535917667916186" green="0.16475099042047459" blue="0.18660893391088107" alpha="0.17649322302163054" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="arrow.counterclockwise" catalog="system" title="">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="teK-Os-MDh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="uur-9X-hSn"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="my mood"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Pd-XK-gb9" secondAttribute="trailing" constant="20" id="0pb-yS-9Ec"/>
+                            <constraint firstItem="8Pd-XK-gb9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3iM-pU-Rhn"/>
+                            <constraint firstItem="dKA-o9-iRD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4nI-hI-F5g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dKA-o9-iRD" secondAttribute="bottom" constant="100" id="BHA-ho-LUc"/>
+                            <constraint firstItem="8Pd-XK-gb9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="C5k-Ch-Spb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dKA-o9-iRD" secondAttribute="trailing" constant="20" id="LVd-r4-fld"/>
+                            <constraint firstItem="bn2-mG-FFP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="UG3-ds-MQU"/>
+                            <constraint firstItem="8Pd-XK-gb9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VaF-PR-dND"/>
+                            <constraint firstItem="8Pd-XK-gb9" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="b5F-hR-7He"/>
+                            <constraint firstItem="bn2-mG-FFP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="g9g-yy-tF3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bn2-mG-FFP" secondAttribute="trailing" constant="20" id="v0R-QI-tUC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="changeThemeOutlet" destination="WwR-Xg-3vw" id="Rzj-Ni-8rs"/>
+                        <outlet property="reloadOutlet" destination="Kr6-R0-0Ll" id="kh3-bk-qCs"/>
+                        <outlet property="textView" destination="8Pd-XK-gb9" id="SBM-7g-W1e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-616" y="127"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.counterclockwise" catalog="system" width="115" height="128"/>
+        <namedColor name="my mood">
+            <color red="0.59899997711181641" green="0.81599998474121094" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
